@@ -1,0 +1,25 @@
+use hafta4 
+create table customer (
+customer_number int,
+customer_name nchar,
+customer_Adress nchar );
+create table collector (
+collector_id int,
+collector_name nchar);
+create table loan_contract (
+contract_id int,
+date_contract_start datetime,
+date_contract_ends datetime,
+interestrate int,
+loan_amount smallmoney,
+loan_payment_amount_due int,
+loan_payment_frequency int,
+loan_payment_due_date datetime)
+create table payment_type(
+payment_type_code int,
+payment_type_description int )
+create table payment (
+payment_id int,
+date_of_payment datetime,
+amount_of_payment int,
+remarks int);
